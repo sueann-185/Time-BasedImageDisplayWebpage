@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page Title -->
+    <title>Time-Based Image Display</title>
+
+    <!-- Viewport settings for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Built in style -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .time-image {
+            max-width: 100%;
+            height: auto;
+            margin: 0 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .student-info {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Time-Based Image Display</h1>
+        <p>A dynamic webpage that changes its displayed image based on the current time of day.</p>
+
+        <!-- Student Information Section -->
+        <div class="student-info">
+            <h2>Student Information</h2>
+            <p><strong>Name:</strong> Peiyao Xiao</p>
+            <p><strong>Course Name:</strong> COP4813-0003</p>
+            <p><strong>Major:</strong> PC</p>
+        </div>
+
+        <div id="image-container">
+            <p id="time-description" style="margin-top: 2rem; margin-bottom: 0;"></p>
+            <!-- Image will be dynamically inserted here -->
+            <img id="timeImage" class="time-image" alt="Time-based image">
+        </div>
+    </div>
+
+    <!-- External JavaScript file reference -->
+    <script src="main.js"></script>
+</body>
+</html>
